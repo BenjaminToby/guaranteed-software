@@ -1,0 +1,446 @@
+#magento-migration-page {
+    background-color: #f1f4f6;
+    color: #22272b;
+    padding: 100px 80px 20px 80px;
+    min-height: 730px;
+}
+
+.magento-migration-pagetitle-text {
+    padding: 40px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    width: 520px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.02);
+    position: relative;
+    left: -100px;
+}
+
+.magento-migration-animation-block {
+    width: 1000px;
+    height: 650px;
+    position: absolute;
+    bottom: -80px;
+    right: -280px;
+    z-index: 0;
+}
+
+.magento-migration-form {
+    width: 450px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    bottom: -40px;
+    right: -100px;
+}
+
+.magento-form-title-section {
+    background-color: #3f2d3f;
+    padding: 30px 30px 5px 30px;
+    color: white;
+    text-align: center;
+}
+
+.magento-form-input-section {
+    padding: 20px 30px 60px 30px;
+}
+
+.magento-form-submit-button {
+    border-radius: 100px;
+    background-color: #ed822f;
+    color: white;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.magento-form-submit-button:hover {
+    background-color: #da701d ;
+}
+
+.inline-link.m1m2-testimonials-link {
+    margin-left: 5px;
+    color: inherit;
+    font-weight: 800;
+    border-bottom: 2px solid white;
+}
+
+.magento-testimonial-block {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.m1m2-testimonial-paragraph {
+    position: relative;
+    margin-left: 20px;
+}
+
+.testimonial-quote {
+    position: absolute;
+    font-size: 70px;
+    color: orange;
+    line-height: 40px;
+    top: 8px;
+    left: -25px;
+}
+
+.warning-block {
+    padding: 10px;
+    background-color: #ed822f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.m1-errors-img {
+    position: absolute;
+    left: -300px;
+    top: 20px;
+}
+
+.body-section.m2-benefits-section {
+    background-image: linear-gradient(white,#f1f4f6,#f1f4f6,#f1f4f6);
+    padding-top: 120px;
+}
+
+.better-seo-img {
+    top: -50px;
+}
+
+.better-performance-img {
+    right: 0px;
+    top: -70px;
+}
+
+.improved-security-img {
+    left: 0px;
+    top: -70px;
+}
+
+.m1m2-service-larger-margin {
+    margin-bottom: 180px;
+}
+
+.features-icons-description {
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -5px rgba(20,23,76,0.2);
+    padding: 30px;
+    margin: 10px;
+}
+
+.white-cta-button.m1m2-cta-button {
+    align-self: flex-end;
+    padding: 20px 35px;
+    color: #37332f;
+}
+
+.white-cta-button.m1m2-cta-button:hover {
+    background-color: #dd8a32;
+    color: white;
+}
+
+.half-column.m1m2-cta-button-section {
+    justify-content: flex-end;
+}
+
+.m1m2-infographic-img {
+    width: 1000px;
+    margin-bottom: -120px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+}
+
+.gtd-logo-graphic-m1m2 {
+    position: absolute;
+    top: -90px;
+    width: 700px;
+}
+
+.footer-form-m1m2 {
+    width: 100%;
+    margin: 0;
+    left: 0;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.m1m2-footer-form-half-section {
+    width: 50%;
+    float: left;
+}
+
+.m1m2-footer-form-half-section.right-half {
+    width: 48%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ............................................................................................................small desktop 1100px Start*/
+@media (max-width: 1100px) {
+	
+    #magento-migration-page {
+        padding: 100px 40px 40px 40px;
+        height: auto;
+    }
+
+    .magento-migration-pagetitle-text {
+        padding: 40px;
+        width: 520px;
+        position: relative;
+        left: 0;
+    }
+
+    .magento-migration-animation-block {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 0;
+        right: auto;
+    }
+
+    .magento-migration-form {
+        width: 90%;
+        border-radius: 15px;
+        position: relative;
+        bottom: 0;
+        right: -30px;
+        margin: 0;
+    }
+
+    .magento-form-title-section {
+        padding: 20px 20px 5px 20px;
+    }
+
+    .magento-form-input-section {
+        padding: 30px;
+    }
+    
+    .m1-errors-img {
+        position: absolute;
+        left: -300px;
+        top: 80px;
+    }
+
+    .body-section.m2-benefits-section {
+        padding-top: 150px;
+    }
+
+    .better-performance-img {
+        top: -50px;
+    }
+
+    .improved-security-img {
+        top: -50px;
+    }
+
+    .m1m2-infographic-img {
+        width: 100%;
+    }
+
+    .gtd-logo-graphic-m1m2 {
+        position: absolute;
+        top: -60px;
+        right: -120px;
+    }
+
+    .footer-form-m1m2 {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        border-radius: 10px;
+        padding: 0;
+    }
+    
+}
+/* ..................................................................................................................small desktop 1100px End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .........................................................................................................................Mobile 800px Start*/
+@media (max-width: 800px) {
+    
+    #magento-migration-page {
+        padding: 100px 30px 30px 30px;
+        max-height: none;
+    }
+
+    .magento-migration-pagetitle-text {
+        padding: 30px;
+    }
+
+    .magento-migration-animation-block {
+        width: 100%;
+        height: auto;
+        right: -20px;
+        margin-top: -12vw;
+    }
+
+    .magento-migration-form {
+        width: 100%;
+        right: 0;
+        padding-bottom: 80px;
+        margin-bottom: -120px;
+    }
+
+    .magento-testimonial-block {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .m1m2-testimonial-paragraph {
+        padding-right: 20px;
+    }
+
+    .m1-errors-img {
+        position: relative;
+        left: 0;
+        top: 3vw;
+        width: 120%;
+    }
+
+    .service-side-image.better-seo-img {
+        top: -20px;
+        height: auto;
+    }
+
+    .m1m2-service-larger-margin {
+        margin-bottom: 80px;
+    }
+
+    .features-icons-description {
+        border-radius: 15px;
+        box-shadow: 0px 0px 25px -5px rgba(20,23,76,0.2);
+        padding: 30px;
+        margin: 10px 0;
+    }
+
+    .white-cta-button.m1m2-cta-button {
+        align-self: flex-start;
+        padding: 20px 35px;
+        margin-top: 20px;
+    }
+
+    .half-column.m1m2-cta-button-section {
+        justify-content: flex-start;
+    }
+
+    .gtd-logo-graphic-m1m2 {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        left: 0;
+    }
+
+    .footer-form-m1m2 {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    .m1m2-footer-form-half-section {
+        width: 100%;
+        float: none;
+    }
+
+    .m1m2-footer-form-half-section.right-half {
+        width: 100%;
+        float: none;
+    }
+	
+}
+/* ...........................................................................................................................Mobile 800px End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...............................................................................................................Mobile 530px Start*/
+@media (max-width: 530px) {
+    
+    #magento-migration-page {
+        padding: 100px 20px 20px 20px;
+    }
+    
+    .magento-migration-pagetitle-text {
+        width: 100%;
+    }
+    
+    .magento-migration-animation-block {
+        margin-top: -10vw;
+        margin-bottom: 20px;
+        right: 0;
+    }
+
+}
+/* ......................................................................................................................Mobile 530px End*/
+
+
+
+
+
+
+
+
+
+/* .......................................................................................................................Mobile 350px Start*/
+@media (max-width: 350px) {
+    
+    
+
+}

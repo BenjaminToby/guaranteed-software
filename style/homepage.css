@@ -1,0 +1,1354 @@
+.whats-new-link-block {
+	display: flex;
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 50px;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	font-size: 13px;
+	margin-bottom: 20px;
+	min-height: 30px;
+}
+
+.whats-new-link-block:hover {
+	opacity: 0.8;
+}
+
+.whats-new-label {
+	padding: 7px 15px;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	background-color: #5f36ff;
+	display: flex;
+	align-items: center;
+}
+
+.whats-new-text {
+	line-height: 16px;
+	margin: 0px;
+	font-size: inherit;
+	padding: 7px 10px;
+	color: white;
+}
+
+.hero-animation-section {
+	width: 430px;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+    right: 40px;
+	transform: scale(1.0);
+	z-index: 50;
+}
+
+.hero-logo-icon-svg {
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    display: none;
+}
+
+#lottie {
+    background-color:transparent;
+    width:100%;
+    height:100%;
+    display:block;
+    opacity: 1;
+}
+
+.hero-logo-wrapper {
+	width: 280px;
+	height: 280px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-dots {
+	position: absolute;
+	width: 850px;
+	z-index: 0;
+	display: block;
+    animation: herodots 80s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes herodots {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.hero-bg-image {
+	position: absolute;
+	width: 120%;
+	z-index: 0;
+	top: 0px;
+	left: -10%;
+}
+
+
+/* ......Hero Tech Icons Start......................................... */
+.hero-tech-icon {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 200px;
+	z-index: 50;
+	overflow: visible;
+	transition: all 0.3s;
+}
+
+.hero-tech-icon:hover {
+	transform: scale(1.15, 1.15);
+	filter: brightness(140%);
+}
+
+#react-hero-icon {
+	width: 80px;
+	height: 80px;
+	top: 26px;
+	left: -55px;
+}
+
+#php-hero-icon {
+	width: 110px;
+	height: 110px;
+	top: 124px;
+	left: -81px;
+}
+
+#laravel-hero-icon {
+	width: 55px;
+	height: 55px;
+	top: 227px;
+	left: 23px;
+}
+
+#magento-hero-icon {
+	width: 75px;
+	height: 75px;
+	top: auto;
+	bottom: 40px;
+	left: -51px;
+}
+
+#android-hero-icon {
+	width: 60px;
+	height: 60px;
+	top: auto;
+	bottom: 25px;
+	left: 61px;
+}
+
+#css3-hero-icon {
+	width: 75px;
+	height: 75px;
+	top: auto;
+	bottom: -40px;
+	left: 133px;
+}
+
+#angular-hero-icon {
+	width: 57px;
+	height: 57px;
+	bottom: -37px;
+	right: 130px;
+}
+
+#ios-hero-icon {
+	width: 50px;
+	height: 50px;
+	bottom: 25px;
+	right: 85px;
+}
+
+#symfony-hero-icon {
+	width: 70px;
+	height: 70px;
+	bottom: 0px;
+	right: -5px;
+}
+
+#wordpress-hero-icon {
+	width: 45px;
+	height: 45px;
+	bottom: 95px;
+	right: 18px;
+}
+
+#woo-hero-icon {
+	width: 72px;
+	height: 72px;
+	bottom: 119px;
+	right: -66px;
+}
+
+#mysql-hero-icon {
+	width: 55px;
+	height: 55px;
+	top: 151px;
+	right: -2px;
+}
+
+#html5-hero-icon {
+	width: 90px;
+	height: 90px;
+	top: 55px;
+	right: -81px;
+}
+
+#python-hero-icon {
+	width: 62px;
+	height: 62px;
+	top: 11px;
+	right: 18px;
+}
+
+#java-hero-icon {
+	width: 46px;
+	height: 46px;
+	top: 13px;
+	left: 270px;
+}
+
+#nodejs-hero-icon {
+	width: 65px;
+	height: 65px;
+	top: -46px;
+	left: 189px;
+}
+
+#mongodb-hero-icon {
+	width: 55px;
+	height: 55px;
+	top: -5px;
+	left: 112px;
+}
+
+#webflow-hero-icon {
+	width: 50px;
+	height: 50px;
+	top: 42px;
+	left: 50px;
+}
+
+@keyframes techiconsanimation {
+    0% {top:-5px;left:0px;}
+    25% {top:0px;left:-2px;}
+    50% {bottom:-3px;right:0px;}
+    75% {bottom:0px;left:-4px;}
+    100% {top:-5px;left:0px;}
+}
+
+#react-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 3s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#php-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#laravel-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#magento-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4.5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-delay: 1s;
+}
+
+#android-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#css3-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 3s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#angular-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#ios-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#symfony-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4.5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-delay: 1s;
+}
+
+#wordpress-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#woo-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 3s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#mysql-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#html5-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#python-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4.5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-delay: 1s;
+}
+
+#java-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#nodejs-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 3s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#mongodb-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#webflow-hero-icon-svg {
+    position: relative;
+    animation: techiconsanimation 4s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+/*.. Hero Tech Icons End............................................ */
+
+
+
+
+.scroll-down-container {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	z-index: 20;
+	padding: 20px;
+	font-size: 14px;
+	line-height: 0px;
+	color: white;
+}
+
+/*...Hero Section End................................................*/
+
+
+
+.client-slideshow {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.client-slideshow-mobile {
+	width: 100%;
+	height: auto;
+	position: relative;
+    display: none;
+}
+
+
+.client-slide, 
+.client-slide-mobile {
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: none;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.clients-mobile-nav {
+    display: none;
+}
+
+.client-logo-link {
+	width: 20%;
+	min-width: 200px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid lightgray;
+	transition: all 0.4s;
+}
+
+
+
+.client-logo-link:hover {
+	box-shadow: 2px 2px 20px 0px #cdcdcd;
+}
+
+.slider-nav-button {
+	width: 40px;
+	height: 40px;
+	background: none;
+	position: absolute;
+	top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.slider-nav-button:hover {
+	background: none;
+}
+
+.slider-nav-button.left {
+	left: -40px;
+}
+
+.slider-nav-button.right {
+	right: -40px;
+}
+
+.what-we-do-tab-links-section {
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	position: relative;
+	bottom: -3px;
+	z-index: 10;
+}
+
+.wwd-tab-link {
+	width: 16%;
+	min-width: 120px;
+	position: relative;
+	padding: 0px 0px 15px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	font-weight: 500;
+	font-size: 14px;
+	cursor: pointer;
+	opacity: 0.4;
+	transition: all 0.3s ease-out;
+	border-bottom: 3px solid transparent;
+}
+
+.wwd-tab-link:hover {
+	opacity: 1;
+	border-bottom: 3px solid #5aa5ff;
+	font-weight: 600;
+	top: -3px;
+}
+
+.active {
+	opacity: 1;
+	border-bottom: 3px solid #5aa5ff;
+}
+
+.active:hover {
+	top: auto;
+}
+
+.wwd-nav-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.what-we-do-tab-content-section {
+	width: 100%;
+	padding: 80px 40px;
+	background: white;
+	border-radius: 5px;
+	position: relative;
+}
+
+.wwd-content-block {
+	width: 100%;
+	height: 100%;
+	display: none;
+	align-items: center;
+	position: relative;
+}
+
+.wwd-content-image {
+	width: 50%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.wwd-content-text {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	color: black;
+	text-align: left;
+}
+
+.wwd-blue-dots {
+	position: relative;
+	width: 300px;
+}
+
+.wwd-main-image {
+	position: absolute;
+	width: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.technologies-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.tech-link-block {
+	width: 190px;
+	height: 190px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	border: 1px solid #e2e2e2;
+	transition: all 0.3s;
+}
+
+.tech-link-block:hover {
+	box-shadow: 0px 0px 15px 2px #dddddd;
+}
+
+.experience-blocks-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.experience-block {
+	width: 285px;
+	height: 285px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #dddddd;
+	transition: all 0.3s;
+}
+
+.experience-block:hover {
+	box-shadow: 0px 0px 15px 2px #dddddd;
+	background: white;
+}
+
+.portfolio-slideshow {
+	width: 100%;
+	min-height: 500px;
+}
+
+.portfolio-slide {
+	width: 100%;
+	display: flex;	
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.portfolio-text-section {
+	width: 50%;
+	color: inherit;
+	text-align: left;
+	padding: 80px 120px 80px 80px;
+	position: relative;
+}
+
+.portfolio-nav {
+	top: 45%;
+}
+
+.portfolio-image {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	right: 0;
+	top: 0;
+}
+
+#Bolt-portfolio-slide {
+	color: white;
+	background-image: linear-gradient(to right, #3c45ec, #6535e1);
+}
+
+#africa-direct-portfolio-slide {
+	color: white;
+	background-color: #a06730;
+}
+
+.features-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.feature-block {
+	width: 300px;
+	text-align: left;
+	min-width: 200px;
+	margin-bottom: 40px;
+	flex-grow: 1;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.testimonials-slideshow {
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+
+.testimonials-slide {
+	display: flex;
+	width: 100%;
+	border-radius: 10px;
+	background: white;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	justify-content: space-between;
+	overflow: hidden;    
+}
+
+.testimonial-image-block {
+	width: 30%;
+	position: relative;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.testimonial-image-bg {
+	position: absolute;
+	align-self: stretch;
+	height: 600px;
+	width: 100%;
+	transform: rotate(10deg) scale(1.4,1.3) translate(-15%,5%);
+}
+
+.testimonial-image {
+	align-self: center;
+	position: relative;
+	z-index: 10;
+}
+
+.testimonial-text-section {
+	text-align: left;
+	padding: 50px;
+	width: 67%;
+}
+
+.testimonial-name-rating-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#our-guarantee {
+	background: #2340b8;
+	color: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	overflow: hidden;
+}
+
+.guarantee-image-section {
+	width: 30%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+    position: relative;
+}
+
+.our-guarantee-icon {
+	max-width: 200px;
+	width: 100%;
+}
+
+.guarantee-text-section {
+	width: 70%;
+	padding: 60px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ............................................................................................................small desktop 1100px Start*/
+@media (max-width: 1100px) {
+	
+    .hero {
+		min-height: 600px;
+		max-height: 900px;
+		height: auto;
+		align-content: flex-start;
+		flex-direction: column;
+		padding: 120px 40px 50px 40px;
+		background-size: auto 100%;
+		justify-content: space-between;
+	}	
+	
+	
+	.hero-animation-section {
+		top: 0px;
+		transform: none;
+		max-width: 350px;
+		height: 500px;
+		right: 5vw;
+	}
+	
+	.hero-logo-wrapper {
+		width: 180px;
+		height: 180px;
+	}
+	
+	/* Hero Tech Icons Start */
+	#react-hero-icon {
+		width: 70px;
+		height: 70px;
+		top: 40px;
+		left: 10px;
+	}
+
+	#php-hero-icon {
+		width: 100px;
+		height: 100px;
+		top: 130px;
+		left: -30px;
+	}
+
+	#laravel-hero-icon {
+		width: 55px;
+		height: 55px;
+		top: 250px;
+		left: 0px;
+	}
+
+	#magento-hero-icon {
+		width: 75px;
+		height: 75px;
+		top: auto;
+		bottom: 100px;
+		left: 0px;
+	}
+
+	#android-hero-icon {
+		width: 60px;
+		height: 60px;
+		top: auto;
+		bottom: 80px;
+		left: 85px;
+	}
+
+	#css3-hero-icon {
+		width: 75px;
+		height: 75px;
+		top: auto;
+		bottom: 10px;
+		left: 133px;
+	}
+
+	#angular-hero-icon {
+		width: 57px;
+		height: 57px;
+		bottom: 80px;
+		right: 90px;
+	}
+
+	#ios-hero-icon {
+		width: 50px;
+		height: 50px;
+		bottom: 20px;
+		right: 60px;
+	}
+
+	#symfony-hero-icon {
+		width: 70px;
+		height: 70px;
+		bottom: 70px;
+		right: -5px;
+	}
+
+	#wordpress-hero-icon {
+		width: 45px;
+		height: 45px;
+		bottom: 160px;
+		right: 30px;
+	}
+
+	#woo-hero-icon {
+		width: 72px;
+		height: 72px;
+		bottom: 150px;
+		right: -66px;
+	}
+
+	#mysql-hero-icon {
+		width: 55px;
+		height: 55px;
+		top: 220px;
+		right: -2px;
+	}
+
+	#html5-hero-icon {
+		width: 80px;
+		height: 80px;
+		top: 140px;
+		right: -70px;
+	}
+
+	#python-hero-icon {
+		width: 62px;
+		height: 62px;
+		top: 110px;
+		right: 18px;
+	}
+
+	#java-hero-icon {
+		width: 46px;
+		height: 46px;
+		top: 80px;
+		left: 210px;
+	}
+
+	#nodejs-hero-icon {
+		width: 65px;
+		height: 65px;
+		top: 20px;
+		left: 270px;
+	}
+
+	#mongodb-hero-icon {
+		width: 55px;
+		height: 55px;
+		top: 20px;
+		left: 140px;
+	}
+
+	#webflow-hero-icon {
+		width: 50px;
+		height: 50px;
+		top: 80px;
+		left: 100px;
+	}
+	/* Hero Tech Icons End */
+	
+	.scroll-down-container {
+		position: relative;
+		bottom: 0px;
+		margin-bottom: -40px;
+		margin-top: 20px;
+	}
+	
+	.hero-logo-icon-svg {
+		width: 100%;
+        display: none;
+	}
+
+	.hero-dots {
+		width: 700px;
+	}
+	
+	.client-slide, .client-slide-mobile {
+		justify-content: center;
+	}
+	
+	.portfolio-slide {
+		flex-direction: column;
+	}
+	
+	.portfolio-text-section {
+		padding: 40px;
+		width: 100%;
+	}
+	
+	.portfolio-image-section {
+		width: 100%;
+		height: 400px;
+	}
+	
+	.portfolio-image {
+		min-height: auto;
+		min-width: auto;
+		width: 100%;
+		top: auto;
+		bottom: 0;
+	}
+    
+}
+/* ..................................................................................................................small desktop 1100px End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .........................................................................................................................Mobile 800px Start*/
+@media (max-width: 800px) {
+    
+    .hero-animation-section {
+		margin-top: 20px;
+		right: auto;
+	}
+    
+    .hero-subtext {
+	    font-size: 14px;
+        line-height: 22px;
+    }
+	
+	.hero-logo-icon-svg {
+        display: block;
+	}
+    	
+	.scroll-down-container {
+		margin-top: 40px;
+		position: relative;
+		bottom: 0;
+	}
+	
+	.what-we-do-tab-links-section {
+		justify-content: center;
+	}
+	
+	.slider-nav-button.right {
+		right: -15px;
+		background: white;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+		border-radius: 100px;
+	}
+	
+	.slider-nav-button.left {
+		left: -15px;
+		background: white;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+		border-radius: 100px;
+	}
+	
+	.wwd-tab-link {
+		margin-bottom: 15px;
+	}
+	
+	.what-we-do-tab-content-section {
+		padding: 20px;
+	}
+	
+	.wwd-content-block {
+		flex-direction: column;
+	}
+	
+	.wwd-content-image {
+		width: 100%;
+	}
+	
+	.wwd-main-image {
+		width: auto;
+		max-width: 160px;
+	}
+    
+    .wwd-blue-dots {
+        width: 230px;
+    }
+	
+	.wwd-content-text {
+		width: 100%;
+		text-align: center;
+		align-items: center;
+        padding: 0px 20px 20px 20px;
+	}
+	
+	.portfolio-image-section {
+		height: 300px;
+	}
+	
+	.testimonials-slide {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.testimonial-image-block {
+		width: 100%;
+		height: 150px;
+	}
+
+	.testimonial-image-bg {
+		height: 100%;
+		width: 100%;
+		transform: none;
+	}
+
+	.testimonial-image {
+		align-self: center;
+		position: relative;
+		z-index: 10;
+	}
+
+	.testimonial-text-section {
+		width: 100%;
+	}
+    
+    .experience-block {
+        flex-grow: 1;
+    }
+	
+	#our-guarantee {
+		flex-direction: column;
+	}
+	
+	.guarantee-image-section {
+		min-height: 100px;
+		width: 100%;
+	}
+	
+	.guarantee-text-section {
+		width: 100%;
+		padding: 40px;
+	}
+	
+}
+/* ...........................................................................................................................Mobile 800px End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...............................................................................................................Mobile 530px Start*/
+@media (max-width: 530px) {
+    
+    .hero-logo-icon-svg {
+		width: 150px;
+	}
+	
+	.hero-dots {
+		width: 600px;
+	}
+	
+	.client-logo-link {
+		min-width: none;
+		width: 100%;
+	}
+	
+	.hero-animation-section {
+		max-width: 300px;
+	}
+	
+	/* Hero Tech Icons Start */
+	#react-hero-icon {
+		width: 60px;
+		height: 60px;
+		top: 40px;
+		left: 20px;
+	}
+
+	#php-hero-icon {
+		width: 80px;
+		height: 80px;
+		top: 130px;
+		left: 0px;
+	}
+
+	#laravel-hero-icon {
+		width: 55px;
+		height: 55px;
+		top: 250px;
+		left: 0px;
+	}
+
+	#magento-hero-icon {
+		width: 70px;
+		height: 70px;
+		top: auto;
+		bottom: 110px;
+		left: 40px;
+	}
+
+	#android-hero-icon {
+		width: 60px;
+		height: 60px;
+		top: auto;
+		bottom: 40px;
+		left: 0px;
+	}
+
+	#css3-hero-icon {
+		width: 75px;
+		height: 75px;
+		top: auto;
+		bottom: -30px;
+		left: 60px;
+	}
+
+	#angular-hero-icon {
+		width: 57px;
+		height: 57px;
+		bottom: 60px;
+		right: 140px;
+	}
+
+	#ios-hero-icon {
+		width: 50px;
+		height: 50px;
+		bottom: 20px;
+		right: 90px;
+	}
+
+	#symfony-hero-icon {
+		width: 60px;
+		height: 60px;
+		bottom: 90px;
+		right: 70px;
+	}
+
+	#wordpress-hero-icon {
+		width: 45px;
+		height: 45px;
+		bottom: 160px;
+		right: 30px;
+	}
+
+	#woo-hero-icon {
+		width: 60px;
+		height: 60px;
+		bottom: 70px;
+		right: 0px;
+	}
+
+	#mysql-hero-icon {
+		width: 50px;
+		height: 50px;
+		top: 220px;
+		right: 0px;
+	}
+
+	#html5-hero-icon {
+		width: 70px;
+		height: 70px;
+		top: 120px;
+		right: 0px;
+	}
+
+	#python-hero-icon {
+		width: 60px;
+		height: 60px;
+		top: 110px;
+		right: 90px;
+	}
+
+	#java-hero-icon {
+		width: 46px;
+		height: 46px;
+		top: 60px;
+		left: 200px;
+	}
+
+	#nodejs-hero-icon {
+		width: 50px;
+		height: 50px;
+		top: 0px;
+		left: auto;
+		right: 20px;
+	}
+
+	#mongodb-hero-icon {
+		width: 55px;
+		height: 55px;
+		top: 20px;
+		left: 140px;
+	}
+
+	#webflow-hero-icon {
+		width: 50px;
+		height: 50px;
+		top: 80px;
+		left: 100px;
+	}
+    
+	/* Hero Tech Icons End */
+    
+    
+    .client-slideshow-mobile {
+        display: flex;
+    }
+    
+    .client-slideshow {
+        display: none;
+    }
+    
+    .clients-mobile-nav {
+        display: flex;
+    }
+	
+	.wwd-tab-link {
+		min-width: 35px;
+        margin-bottom: 0px;
+	}
+    
+    .services-tab-nav-text {
+        display: none;
+    }
+    
+    .wwd-nav-icon {
+        width: 28px;
+        height: 28px;
+    }
+	
+	.tech-link-block {
+		width: 120px;
+		height: 120px;
+		padding: 20px;
+		flex-grow: 1;
+	}
+	
+	.portfolio-image-section {
+		height: 200px;
+	}
+	
+	.portfolio-text-section {
+		padding: 30px;
+	}
+	
+	.guarantee-text-section {
+		padding: 20px;
+	}
+	
+	.testimonial-text-section {
+		padding: 30px;
+	}
+
+}
+/* ......................................................................................................................Mobile 530px End*/
+
+
+
+
+
+
+
+
+
+/* .......................................................................................................................Mobile 350px Start*/
+@media (max-width: 350px) {
+    
+    .hero-animation-section {
+		transform: scale(0.9);
+	}
+	
+	.whats-new-link-block {
+		font-size: 12px;
+		height: auto;
+		line-height: normal;
+		align-items: stretch;
+	}
+	
+	.portfolio-image-section {
+		height: 100px;
+	}
+
+}
