@@ -2,7 +2,7 @@
 //------------------------------------------------------------------------------------------ Header Content
 document.getElementById("main-header").innerHTML = `
 
-<a href="Home.html" class="logo-link-block" id="logo-link-wrapper">
+<a href="index.html" class="logo-link-block" id="logo-link-wrapper">
 			<img src="images-dw/main-logo.svg" alt="" id="main-logo"/>
 			<img src="images-dw/main-logo-white.svg" alt="" id="main-logo-white"/>
 		</a>
