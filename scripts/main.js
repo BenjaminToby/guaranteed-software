@@ -185,27 +185,27 @@ document.getElementById("main-footer").innerHTML = `
 document.getElementById("contact-form-popup").innerHTML = `
 
     <div class="contact-form-wrapper">
-            <div class="contact-form-description-section">
-                <h2>Contact Us</h2>
-                <p style="margin-bottom:0px;">You'll hear back from us very soon. Even if you're sending this message outside of business hours!</p>
-                <div class="contact-form-image-section">
-                    <img src="images-dw/blue-dots.png" alt="" class="contact-form-dots"/>
-                    <img src="images-dw/paper-plane.svg" alt="" class="contact-form-paper-plane"/>
-                </div>
+        <div class="contact-form-description-section">
+            <h2>Contact Us</h2>
+            <p style="margin-bottom:0px;">You'll hear back from us very soon. Even if you're sending this message outside of business hours!</p>
+            <div class="contact-form-image-section">
+                <img src="images-dw/blue-dots.png" alt="" class="contact-form-dots"/>
+                <img src="images-dw/paper-plane.svg" alt="" class="contact-form-paper-plane"/>
             </div>
-            <div class="contact-form-section">
-                <form class="contact-form" autocomplete="on">
-                    <input type="text" placeholder="Enter Your Full Name">
-                    <input type="email" placeholder="Enter Your Email Address">
-                    <input type="tel" placeholder="Enter Your Telephone Number">
-                    <textarea name="message" rows="5" placeholder="Enter Your Message"></textarea>
-                    <input type="submit" value="Submit" class="main-contact-form-submit-button">
-			    </form>
-            </div>
+        </div>
+        <div class="contact-form-section">
+            <form class="contact-form" autocomplete="on">
+                <input type="text" placeholder="Enter Your Full Name">
+                <input type="email" placeholder="Enter Your Email Address">
+                <input type="tel" placeholder="Enter Your Telephone Number">
+                <textarea name="message" rows="5" placeholder="Enter Your Message"></textarea>
+                <input type="submit" value="Submit" class="main-contact-form-submit-button">
+            </form>
+        </div>
 
-            <div class="close-form-block" onClick="hideContactForm()"><span style="transform:rotate(45deg);">+</span></div>
-		</div>
-<div class="ctf-bg-canceller" onClick="hideContactForm()"></div>
+        <div class="close-form-block" onClick="hideContactForm()"><span style="transform:rotate(45deg);">+</span></div>
+    </div>
+    <div class="ctf-bg-canceller" onClick="hideContactForm()"></div>
 
 `;
 
@@ -216,17 +216,17 @@ document.getElementById("contact-form-popup").innerHTML = `
 
 //var footerCTA = (document.getElementById("footer-cta-1") || document.getElementById("footer-cta-2"));
 
-document.getElementById("footer-cta-1").innerHTML = `
+if(document.getElementById("footer-cta-1")) { document.getElementById("footer-cta-1").innerHTML = `
 
     <div class="container1140px centered-content">
-			<img src="images-dw/paper-plane.svg" alt="" width="60px"/>
-			<div class="spacer-20px"></div>
-			<span class="mini-sub-header">CONTACT US</span>
-			<h2 style="color:inherit;">Get in touch for a discovery call</h2>
-			<button class="main-cta-button" onClick="showContactForm()">Start a Project</button>
-		</div>
+        <img src="images-dw/paper-plane.svg" alt="" width="60px"/>
+        <div class="spacer-20px"></div>
+        <span class="mini-sub-header">CONTACT US</span>
+        <h2 style="color:inherit;">Get in touch for a discovery call</h2>
+        <button class="main-cta-button" onClick="showContactForm()">Start a Project</button>
+    </div>
 
-`;
+`}
 
 
 
