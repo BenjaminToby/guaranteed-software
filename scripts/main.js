@@ -4,9 +4,9 @@ document.getElementById("main-header").innerHTML = `
 
 <a href="Home.html" class="logo-link-block" id="logo-link-wrapper">
 			<img src="images-dw/main-logo.svg" alt="" id="main-logo"/>
-			<img src="images-dw/main-logo-white.svg" alt="" id="main-logo-white"/> 
+			<img src="images-dw/main-logo-white.svg" alt="" id="main-logo-white"/>
 		</a>
-		
+
 		<nav class="main-nav" id="top-main-navigation">
 			<div class="nav-link-wrapper dropdown">
 				<a href="#" class="nav-link">
@@ -22,15 +22,15 @@ document.getElementById("main-header").innerHTML = `
 					<a class="nav-dropdown-link" href="#">Magento Migration Services</a>
 				</div>
 			</div>
-			
+
 			<div class="nav-link-wrapper dropdown">
 				<a href="#" class="nav-link">
 					Technologies<span style="transform:rotate(90deg);margin-left:10px;">&#10095;</span>
 				</a>
 				<div class="nav-dropdown-content two-columns" id="tech-dropdown">
-					
+
 					<div class="nav-dropdown-column">
-						<a class="nav-dropdown-link" href="https://guaranteed-software-new-dw-benjamin.guaranteed.dev/custom-php-web-development-services.html">PHP</a>
+						<a class="nav-dropdown-link" href="custom-php-web-development-services.html">PHP</a>
 						<a class="nav-dropdown-link" href="#">MySql</a>
 						<a class="nav-dropdown-link" href="#">Wordpress</a>
 						<a class="nav-dropdown-link" href="#">Magento</a>
@@ -40,7 +40,7 @@ document.getElementById("main-header").innerHTML = `
 						<a class="nav-dropdown-link" href="#">Android</a>
 						<a class="nav-dropdown-link" href="#">IOS</a>
 					</div>
-					
+
 					<div class="nav-dropdown-column">
 						<a class="nav-dropdown-link" href="#">React</a>
 						<a class="nav-dropdown-link" href="#">Laravel</a>
@@ -51,10 +51,10 @@ document.getElementById("main-header").innerHTML = `
 						<a class="nav-dropdown-link" href="#">WooCommerce</a>
 						<a class="nav-dropdown-link" href="#">Webflow</a>
 					</div>
-					
+
 				</div>
 			</div>
-			
+
 			<div class="nav-link-wrapper dropdown">
 				<a href="#" class="nav-link">
 					About Us<span style="transform:rotate(90deg);margin-left:10px;">&#10095;</span>
@@ -65,13 +65,13 @@ document.getElementById("main-header").innerHTML = `
 					<a class="nav-dropdown-link" href="#">Careeres/Jobs</a>
 				</div>
 			</div>
-			
+
 			<div class="nav-link-wrapper"><a href="#" class="nav-link">Events</a></div>
 			<div class="nav-link-wrapper"><a href="#" class="nav-link">Blog</a></div>
 			<spacer class="spacer-20px"></spacer>
-			<div class="top-nav-cta-wrapper"><button class="top-nav-cta" onClick="showContactForm()">Contact Us</button></div>						
+			<div class="top-nav-cta-wrapper"><button class="top-nav-cta" onClick="showContactForm()">Contact Us</button></div>
 		</nav>
-		
+
 		<div class="hamburger-wrapper" onClick="toggleHamburgerClass()">
 			<div class="hamburger-line"></div>
 			<div class="hamburger-line"></div>
@@ -105,7 +105,7 @@ document.getElementById("main-footer").innerHTML = `
 				<a href="#" class="footer-contact-block">
 					<div class="contact-block-icon" style="background:#5C95FF;"><img src="images-dw/placeholder-white.svg" alt="" width="20px"/></div>
 					<span style="font-family:helvetica; margin-right:15px;padding:10px 0px;color:#777777;font-weight:500;">6616 3ieme Ave Montreal,<br>QC H1T 3E4 Canada</span>
-				</a>				
+				</a>
 			</div>
 			<div class="footer-quater-section">
 				<h5 style="font-weight:700;text-align:left;">Services</h5>
@@ -134,7 +134,7 @@ document.getElementById("main-footer").innerHTML = `
 						<a href="#" class="footer-link">Mongo DB</a>
 						<a href="#" class="footer-link">Node JS</a>
 					</div>
-					
+
 					<div class="footer-sub-column">
 						<a href="#" class="footer-link">PHP</a>
 						<a href="#" class="footer-link">Python</a>
@@ -155,18 +155,18 @@ document.getElementById("main-footer").innerHTML = `
 				<a href="#" class="footer-link">Jobs/Career</a>
 			</div>
 		</div>
-		
+
 		<div class="container1140px copyright-section">
 			<p class="copyright-text">
 				&#169; <span style="font-weight:600;font-size:14px;">2012-<span id="current-year"></span></span> Guaranteed Network. All Rights Reserved
 			</p>
-			
+
 			<div style="width:auto;display:flex;align-items:center;margin-bottom:20px;">
 				<a href="#" class="footer-social-link"><img src="images-dw/facebook.svg" alt="" width="100%"/></a>
 				<a href="#" class="footer-social-link"><img src="images-dw/twitter.svg" alt="" width="100%"/></a>
 				<a href="#" class="footer-social-link"><img src="images-dw/linkedin.svg" alt="" width="100%"/></a>
 			</div>
-			
+
 			<div style="display:flex;align-items:center;justify-content:center; flex-wrap:wrap;">
 				<a href="#" class="footer-link">Terms and Conditions</a>
 				<div class="spacer-20px"></div>
@@ -202,7 +202,7 @@ document.getElementById("contact-form-popup").innerHTML = `
                     <input type="submit" value="Submit" class="main-contact-form-submit-button">
 			    </form>
             </div>
-            
+
             <div class="close-form-block" onClick="hideContactForm()"><span style="transform:rotate(45deg);">+</span></div>
 		</div>
 <div class="ctf-bg-canceller" onClick="hideContactForm()"></div>
@@ -260,11 +260,11 @@ function toggleHamburgerClass() {
 var ctf = document.getElementById("contact-form-popup");
 
 
-function showContactForm() {    
+function showContactForm() {
     ctf.style.display = "flex";
 }
 
-function hideContactForm() {    
+function hideContactForm() {
     ctf.style.display = "none";
 }
 
@@ -273,13 +273,3 @@ function hideContactForm() {
 //Copyright Date .........................................................................................................
 const date = new Date();
 document.getElementById("current-year").innerHTML = date.getFullYear();
-
-
-
-
-
-
-
-
-
-
