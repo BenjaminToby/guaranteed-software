@@ -189,11 +189,19 @@
 	right: -66px;
 }
 
+#woo-hero-icon-svg {
+    width: 100%;
+}
+
 #mysql-hero-icon {
 	width: 55px;
 	height: 55px;
 	top: 151px;
 	right: -2px;
+}
+
+#mysql-hero-icon-svg {
+    width: 100%;
 }
 
 #html5-hero-icon {
@@ -203,11 +211,19 @@
 	right: -81px;
 }
 
+#html5-hero-icon-svg {
+    width: 100%;
+}
+
 #python-hero-icon {
 	width: 62px;
 	height: 62px;
 	top: 11px;
 	right: 18px;
+}
+
+#python-hero-icon-svg {
+    width: 100%;
 }
 
 #java-hero-icon {
@@ -236,6 +252,10 @@
 	height: 50px;
 	top: 42px;
 	left: 50px;
+}
+
+#webflow-hero-icon-svg {
+    width: 100%;
 }
 
 @keyframes techiconsanimation {
