@@ -1101,8 +1101,9 @@ input:focus {
 	}
     
     .body-section.hero {
-        max-height: none;
-        height: auto;
+        padding: 120px 20px 50px 20px;
+		max-height: none;
+		height: auto;
 	}
 	
 	.less-padding {
@@ -1113,13 +1114,7 @@ input:focus {
 		width: 100%;
 		max-width: none;
 	}
-	
-	.hero {
-		padding: 120px 20px 50px 20px;
-		max-height: none;
-		height: auto;
-	}
-	
+    
 	.container1200px {
 		flex-direction: column;
 		align-items: center;
