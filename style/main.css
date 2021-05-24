@@ -1097,6 +1097,12 @@ input:focus {
 	
 	.body-section {
 		padding: 50px 30px;
+        height: auto;
+	}
+    
+    .body-section.hero {
+        max-height: none;
+        height: auto;
 	}
 	
 	.less-padding {
