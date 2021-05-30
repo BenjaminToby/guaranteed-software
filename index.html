@@ -73,6 +73,7 @@
 
 	<!-- .................................................................................................................... Top Nav -->
 	<header class="top-nav-container" id="main-header">     </header>
+    <div id="top-nav-controller" class="top-nav-controller"></div>
 
 
 
@@ -80,13 +81,11 @@
 
 
 	<!-- .................................................................................................................... Hero Section -->
-	<section class="body-section hero" id="homepage-hero-section">
-
-		<div id="top-nav-controller" class="top-nav-controller"></div>
+	<section class="body-section hero" id="homepage-hero-section">		
 
 		<img src="images-dw/main-bg-image.jpg" alt="" class="main-bg-image"/>
 
-		<div class="container1140px mobile-centered">
+		<div class="container1140px mobile-centered" id="hero-container">
 			<div class="hero-text-section">
 				<a class="whats-new-link-block" href="#">
 					<div class="whats-new-label" id="testerrr">New</div>
@@ -147,9 +146,6 @@
 		<a class="scroll-down-container" href="#our-clients">
 			scroll<img src="images-dw/mouse-white.svg" alt="" width="20" style="margin:10px;"/>down
 		</a>
-
-
-
 	</section>
 
 
@@ -166,7 +162,7 @@
 
 	<section class="body-section">
 		<div class="page-anchor-target" id="our-clients"></div>
-		<div class="container1140px centered-content">
+		<div class="container1140px centered-content show-on-scroll">
 			<span class="mini-sub-header">OUR CLIENTS</span>
 			<h2>We developed custom software solutions for clients such as:</h2>
 			<div class="spacer-20px"></div>
@@ -232,10 +228,6 @@
 			  	<div class="slider-nav-button right clients-mobile-nav" onclick="plusDivsMobile(1)"><span>&#10095;</span></div>
             </div>
 		</div>
-
-		<script>
-
-		</script>
 	</section>
 
 
@@ -251,7 +243,7 @@
 
 	<section class="body-section" style="background:#2a0ca2;color:white;overflow:hidden;">
 		<img src="images-dw/main-bg-image.jpg" alt="" class="main-bg-image"/>
-		<div class="container1140px centered-content">
+		<div class="container1140px centered-content show-on-scroll">
 			<h2 style="color:white;">What we do</h2>
 
 			<p style="text-align:center;color:white;opacity:0.8;">We cut across all professional web and mobile development jobs.</p>
@@ -377,7 +369,7 @@
 	<!-- .................................................................................................................... Section 4 -->
 
 	<section class="body-section">
-		<div class="container1140px centered-content">
+		<div class="container1140px centered-content show-on-scroll">
 			<span class="mini-sub-header">OUR SPHERE OF EXPERTISE</span>
 			<h2>Technologies we know and love</h2>
 			<div class="spacer-20px"></div>
@@ -413,7 +405,7 @@
 	<!-- .................................................................................................................... Section 5 -->
 
 	<section class="body-section" style="background:#f4f3f8;border-top:1px solid #dddddd;">
-		<div class="container1140px centered-content">
+		<div class="container1140px centered-content show-on-scroll">
 			<span class="mini-sub-header">RESULTS</span>
 			<h2>We have the experience</h2>
 			<div class="spacer-40px"></div>
@@ -452,7 +444,7 @@
 	<!-- .................................................................................................................... Section 6 -->
 
 	<section class="body-section" style="border-top:1px solid #dddddd;">
-		<div class="container1140px centered-content">
+		<div class="container1140px centered-content show-on-scroll">
 			<span class="mini-sub-header">PORTFOLIO</span>
 			<h2>Great work we have done</h2>
 			<div class="spacer-40px"></div>
@@ -494,7 +486,7 @@
 	<!-- .................................................................................................................... Section 7 -->
 
 	<section class="body-section" style="border-top:1px solid #dddddd;">
-		<div class="container1140px centered-content">
+		<div class="container1140px centered-content show-on-scroll">
 			<span class="mini-sub-header">FEATURES</span>
 			<h2>What you can expect when working with us</h2>
 			<div class="spacer-40px"></div>
@@ -559,7 +551,7 @@
 	<!-- .................................................................................................................... Section 8 -->
 
 	<section class="body-section" style="background:#f4f3f8;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;padding-bottom:200px;">
-		<div class="container1140px centered-content">
+		<div class="container1140px centered-content show-on-scroll">
 			<span class="mini-sub-header">WHAT OUR CLIENTS SAY ABOUT US</span>
 			<h2>Testimonials</h2>
 			<div class="spacer-40px"></div>
@@ -642,7 +634,7 @@
 	<!-- .................................................................................................................... Section 9 -->
 
 	<section class="body-section" style="margin-top:-100px;padding-top:0px;">
-		<div class="container1140px" id="our-guarantee">
+		<div class="container1140px show-on-scroll" id="our-guarantee">
 
             <img src="images-dw/main-bg-image.jpg" alt="" class="main-bg-image"/>
 
@@ -695,59 +687,12 @@
 
 	<!-- .................................................................................................................... Scripts -->
 	<script src="scripts/main.js"></script>
-    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/homepage.js"></script>
+    <script src="scripts/animations.js"></script>
 
     <script>
 
-        //Transparent header controller script......................................................................
-        const header = document.querySelector("#main-header");
-        const sectionOne = document.querySelector("#top-nav-controller");
-
-        var sectionOneOptions = {
-            rootMargin: "0px 0px 0px 0px"
-        };
-
-        const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    header.className = "top-nav-container-dark-bg";
-                    document.getElementById("services-dropdown").className = "nav-dropdown-content-dark-bg";
-                    document.getElementById("tech-dropdown").className = "nav-dropdown-content-dark-bg two-columns";
-                    document.getElementById("about-dropdown").className = "nav-dropdown-content-dark-bg";
-                    document.getElementById("logo-link-wrapper").style.width = "330px";
-                    document.getElementById("main-logo").style.display = "none";
-                    document.getElementById("main-logo-white").style.display = "block";
-
-
-                    let hamburgerLine = document.querySelectorAll(".hamburger-line");
-
-                    for (let i = 0; i < hamburgerLine.length; i++) {
-                                hamburgerLine[i].style.backgroundColor = "#ffffff";
-                    };
-
-                    //document.getElementsByClassName("st0").style.fill = "#223a9d";
-                    //document.getElementsByClassName("st1").style.fill = "#0070ba";
-                } else {
-                    header.className = "top-nav-container";
-                    document.getElementById("services-dropdown").className = "nav-dropdown-content";
-                    document.getElementById("tech-dropdown").className = "nav-dropdown-content two-columns";
-                    document.getElementById("about-dropdown").className = "nav-dropdown-content";
-                    document.getElementById("logo-link-wrapper").style.width = "250px";
-                    document.getElementById("main-logo").style.display = "block";
-                    document.getElementById("main-logo-white").style.display = "none";
-
-                    let hamburgerLine = document.querySelectorAll(".hamburger-line");
-
-                    for (let i = 0; i < hamburgerLine.length; i++) {
-                                hamburgerLine[i].style.backgroundColor = "#27304d";
-                    }
-                    //document.getElementsByClassName("st0").style.fill = "#ffffff";
-                    //document.getElementsByClassName("st1").style.fill = "#ffffff";
-                }
-            })
-        }, sectionOneOptions);
-
-        sectionOneObserver.observe(sectionOne);
+        
 
     </script>
 

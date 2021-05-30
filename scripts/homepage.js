@@ -1,9 +1,67 @@
+
+//Transparent header controller script......................................................................
+const header = document.querySelector("#main-header");
+const sectionOne = document.querySelector("#top-nav-controller");
+
+var sectionOneOptions = {
+    rootMargin: "0px 0px 0px 0px"
+};
+
+var sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            header.className = "top-nav-container-dark-bg";
+            document.getElementById("services-dropdown").className = "nav-dropdown-content-dark-bg";
+            document.getElementById("tech-dropdown").className = "nav-dropdown-content-dark-bg two-columns";
+            document.getElementById("about-dropdown").className = "nav-dropdown-content-dark-bg";
+            document.getElementById("logo-link-wrapper").style.width = "330px";
+            document.getElementById("main-logo").style.display = "none";
+            document.getElementById("main-logo-white").style.display = "block";
+
+
+            let hamburgerLine = document.querySelectorAll(".hamburger-line");
+
+            for (let i = 0; i < hamburgerLine.length; i++) {
+                        hamburgerLine[i].style.backgroundColor = "#ffffff";
+            }
+
+            //document.getElementsByClassName("st0").style.fill = "#223a9d";
+            //document.getElementsByClassName("st1").style.fill = "#0070ba";
+        } else {
+            header.className = "top-nav-container";
+            document.getElementById("services-dropdown").className = "nav-dropdown-content";
+            document.getElementById("tech-dropdown").className = "nav-dropdown-content two-columns";
+            document.getElementById("about-dropdown").className = "nav-dropdown-content";
+            document.getElementById("logo-link-wrapper").style.width = "250px";
+            document.getElementById("main-logo").style.display = "block";
+            document.getElementById("main-logo-white").style.display = "none";
+
+            let hamburgerLine = document.querySelectorAll(".hamburger-line");
+
+            for (let i = 0; i < hamburgerLine.length; i++) {
+                        hamburgerLine[i].style.backgroundColor = "#27304d";
+            }
+            //document.getElementsByClassName("st0").style.fill = "#ffffff";
+            //document.getElementsByClassName("st1").style.fill = "#ffffff";
+        }
+    })
+}, sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
+
+
+
 //Load Functions .......................................................................................
 window.addEventListener("load", () => {
 
     document.getElementById("preloader-container").className = "preloader-container-exit";
+    
+    setTimeout(function() {
+        document.getElementById("hero-container").classList.add("is-visible");
+    }, 1000);
 
-    });
+});
 
 
 

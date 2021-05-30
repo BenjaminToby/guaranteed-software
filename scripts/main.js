@@ -218,7 +218,7 @@ document.getElementById("contact-form-popup").innerHTML = `
 
 if(document.getElementById("footer-cta-1")) { document.getElementById("footer-cta-1").innerHTML = `
 
-    <div class="container1140px centered-content">
+    <div class="container1140px centered-content show-on-scroll">
         <img src="images-dw/paper-plane.svg" alt="" width="60px"/>
         <div class="spacer-20px"></div>
         <span class="mini-sub-header">CONTACT US</span>
