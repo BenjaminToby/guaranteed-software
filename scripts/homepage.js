@@ -58,7 +58,8 @@ window.addEventListener("load", () => {
     document.getElementById("preloader-container").className = "preloader-container-exit";
     
     setTimeout(function() {
-        document.getElementById("hero-container").classList.add("is-visible");
+        document.getElementById("hero-container").style.opacity = "1";
+        document.getElementById("hero-container").style.transform = "none";
     }, 1000);
 
 });

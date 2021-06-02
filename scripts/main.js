@@ -333,7 +333,7 @@ document.getElementById("current-year").innerHTML = date.getFullYear();
 
 
 
-const sectionTwo = document.querySelectorAll("section div, footer");
+const sectionTwo = document.querySelectorAll("section > div, footer");
 
 var windowBind = {
     root: window.document,
