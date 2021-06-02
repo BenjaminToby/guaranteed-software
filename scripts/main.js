@@ -283,44 +283,85 @@ document.getElementById("current-year").innerHTML = date.getFullYear();
 
 
 //Animations .........................................................................................................
-var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 500)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
+//var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 500)};
+//var elementsToShow = document.querySelectorAll('.show-on-scroll');
+//
+//function loop() {
+//
+//    Array.prototype.forEach.call(elementsToShow, function(element){
+//      if (isElementInViewport(element)) {
+//        element.classList.add('is-visible');
+//      } 
+//      else {
+//        element.classList.remove('is-visible');
+//      }
+//    });
+//
+//    scroll(loop);
+//}
+//
+//loop();
+//
+//function isElementInViewport(el) {
+//  // special bonus for those using jQuery
+//  if (typeof jQuery === "function" && el instanceof jQuery) {
+//    el = el[0];
+//  }
+//    
+//  var rect = el.getBoundingClientRect();
+//  return (
+//    (rect.top <= 0 && rect.bottom >= 0)
+//
+//    ||
+//
+//    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+//
+//    ||
+//
+//    (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+//  );
+//}
 
-function loop() {
 
-    Array.prototype.forEach.call(elementsToShow, function(element){
-      if (isElementInViewport(element)) {
-        element.classList.add('is-visible');
-      } 
-      else {
-        element.classList.remove('is-visible');
-      }
-    });
 
-    scroll(loop);
-}
 
-loop();
 
-function isElementInViewport(el) {
-  // special bonus for those using jQuery
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
-  }
-    
-  var rect = el.getBoundingClientRect();
-  return (
-    (rect.top <= 0 && rect.bottom >= 0)
 
-    ||
 
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight))
 
-    ||
 
-    (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-  );
-}
+
+
+
+const sectionTwo = document.querySelectorAll("section div, footer");
+
+var windowBind = {
+    root: window.document,
+    rootMargin: "0px",
+    threshold: 0.2
+};
+
+var bodySectionsObserver = new IntersectionObserver(function(entries, bodySectionsObserver) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            
+            entry.target.classList.add("is-visible");
+            
+        } 
+        
+//        else {
+//            
+//            entry.target.classList.remove("is-visible");
+//        }
+    })
+}, windowBind);
+
+sectionTwo.forEach(entry => {
+    bodySectionsObserver.observe(entry);
+});
+
+
+
 
 
 
